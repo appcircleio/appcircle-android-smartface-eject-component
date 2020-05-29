@@ -21,14 +21,17 @@ inputs:
   helpText:
 outputs:
 - key: "AC_PROJECT_PATH"
+  title: "Project Path"
   defaultValue: "AC_PROJECT_PATH"
   description: "Android project path."
   helpText:
 - key: "AC_VARIANTS"
+  title: "Variants"
   defaultValue: "AC_VARIANTS"
   description: "Android variant."
   helpText:
 - key: "AC_MODULE"
+  title: "Module"
   defaultValue: "AC_MODULE"
   description: "Android module."
   helpText:
