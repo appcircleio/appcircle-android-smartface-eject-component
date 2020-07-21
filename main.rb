@@ -14,7 +14,7 @@ smartface_cli_version = get_env_variable("AC_SMARTFACE_CLI_VERSION") || "latest"
 smartface_player_version = get_env_variable("AC_SMARTFACE_PLAYER_VERSION") || "latest"
 
 def run_command(command)
-    puts "@[command] #{command}"
+    puts "@@[command] #{command}"
     status = nil
     stdout_str = nil
     stderr_str = nil
