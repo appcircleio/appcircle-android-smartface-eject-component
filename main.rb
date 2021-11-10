@@ -35,13 +35,13 @@ def run_command(command)
 end
 
 # Install smartface cli
-run_command("yarn  global add  smartface@#{smartface_cli_version}")
+run_command("yarn global add smartface@#{smartface_cli_version}")
 run_command("smfc -v")
 # Specify player version
 run_command("smfc use #{smartface_player_version} --os Android")
 # Install dependencies
-run_command("cd #{repo_path}/scripts && yarn i")
-run_command("cd #{repo_path} && yarn i && yarn run build:transpile")
+run_command("cd #{repo_path}/scripts && yarn install")
+run_command("cd #{repo_path} && yarn install && yarn run build:transpile")
 
 params = "--task=export:Android --projectRoot=#{repo_path} --outputFolder=#{temp_folder}/sf-android-temp"
 run_command("smfc #{params}")
